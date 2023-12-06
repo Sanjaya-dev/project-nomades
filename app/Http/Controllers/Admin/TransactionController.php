@@ -22,7 +22,7 @@ class TransactionController extends Controller
         ])->get();
 
         return view('pages.admin.transaction.index',[
-            'items' => $items,
+            'items' => $items
         ]);
     }
 

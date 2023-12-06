@@ -10,7 +10,7 @@ class Transaction extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'travel_packages_id', 'user_id', 'additonal_visa',
+        'travel_packages_id', 'user_id', 'additional_visa',
         'transaction_total', 'transaction_status'
     ];
 
@@ -18,6 +18,7 @@ class Transaction extends Model
 
     ];
 
+    // relasi database
     public function details(){
         return $this->hasMany(TransactionDetail::class,'transactions_id','id');
     }

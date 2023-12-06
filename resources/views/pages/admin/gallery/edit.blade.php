@@ -33,7 +33,7 @@
                 </div>
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="file" name="image" class="form-control" placeholder="image">
+                    <input multiple type="file" name="image" class="form-control" placeholder="image">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">
                     simpan
